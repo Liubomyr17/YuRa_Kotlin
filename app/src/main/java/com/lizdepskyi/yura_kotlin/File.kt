@@ -4,26 +4,33 @@ import java.util.*
 
 fun main() {
 
-    var myArray = arrayOf(1, 2, 7)
-    var myList = listOf(1, 2, 7)
+    /*val names = arrayOf("Anne", "Peter", "Jeff")
+    for (name in names)
+        println(name)
 
-    var mutableList = mutableListOf(1, 5, 3.5, "hey there")
-    var mutableList1 = mutableListOf<Double>(1.0, 5.0, 3.5)
+    for (x in 0..10) println(x)
 
-    mutableList.add("hello")
-    println(mutableList)
+    for (x in 0 until 10) println(x)
 
-    var rainbowColors: Array<String> =
-        arrayOf("red", "orange", "yellow", "green", "blue", "indigo", "violet")
+    for (x in 0 until 10 step 2) println(x)
 
-    var colors = mutableListOf("Deep purple", "light orange", "dark blue")
+    for (x in 0 downTo 10) println(x)
 
-    colors.add("red")
-    colors.addAll(arrayOf("blue", "green"))
+    for (x in 0 downTo 10 step 2) println(x)
 
-    println()
+    val numbers = 10 downTo 0 step 2
 
-    println(rainbowColors.contentToString())
-    println(colors)
+    val numberList = numbers.toList()
+    println(numberList)
+    println(numbers)
 
+    for (x in numbers step 2) println(x)*/
+
+    var x = 0
+    while (x < 10) {
+        if (x % 2 == 0) {
+            println(x)
+        }
+        x++
+    }
 }
