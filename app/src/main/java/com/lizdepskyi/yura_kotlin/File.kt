@@ -2,18 +2,18 @@ package com.lizdepskyi.yura_kotlin
 
 fun main() {
 
-    /*fun happyBirthday(name: String, age: Int): String {
-        return "Happy ${age}th birthday, $name!"
-    }*/
+    class Person() {
+        var firstName: String = "John"
+        var lastName: String = "Doe"
 
-    fun happyBirthday(name: String, age: Int): String =
-        "Happy ${age}th birthday, $name!"
+        var age: Int = 1
+        var isMarried: Boolean = false
 
-        println(happyBirthday("Bob", 23))
-
-    fun happyBirthdayWithoutParams() {
-        println("Happy birthday!")
     }
+    val jack = Person()
+    jack.age = 0
+    println(jack.age)
+    println(jack.firstName)
+    println(jack.lastName)
 
-    happyBirthdayWithoutParams()
 }
