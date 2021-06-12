@@ -1,33 +1,29 @@
 package com.lizdepskyi.yura_kotlin
 
+import java.util.*
+
 fun main() {
 
-    val isAdult: Boolean
-    val age = 19
-    val isMan = true
+    var myArray = arrayOf(1, 2, 7)
+    var myList = listOf(1, 2, 7)
 
-    isAdult = if (age > 18) {
-        println("You're adult, man")
-        true
-    } else {
-        println("You are not adult")
-        false
-    }
+    var mutableList = mutableListOf(1, 5, 3.5, "hey there")
+    var mutableList1 = mutableListOf<Double>(1.0, 5.0, 3.5)
 
-    if (isAdult && isMan) {
-        println("You can go to the party")
-    } else if (isAdult && !isMan) {
-        println("You can go to the party")
-    } else {
-        println("You cannot go to the party")
-    }
+    mutableList.add("hello")
+    println(mutableList)
 
-    var isStudent = true
-    var hasTicket = false
+    var rainbowColors: Array<String> =
+        arrayOf("red", "orange", "yellow", "green", "blue", "indigo", "violet")
 
-    if (!isStudent || hasTicket) {
-        println("You can go to the party")
-    } else {
-        println("You can't go to the party")
-    }
+    var colors = mutableListOf("Deep purple", "light orange", "dark blue")
+
+    colors.add("red")
+    colors.addAll(arrayOf("blue", "green"))
+
+    println()
+
+    println(rainbowColors.contentToString())
+    println(colors)
+
 }
