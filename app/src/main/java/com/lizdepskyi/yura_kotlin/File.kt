@@ -9,7 +9,18 @@ fun main() {
     println("$greeting My favorite number is $number")
 
     val name = "Liubomyr"
-    val age = 30
+    var age = 30
+
+    age += 4
+    age -= 4
+    age /= 4
+    age *= 4
+    age++
+
+    var radius = 7
+    val pi = 3.14
+    var circleArea = pi * radius * radius
+    println(circleArea)
 
     println("My name is $name and I'm $age years old")
 }
