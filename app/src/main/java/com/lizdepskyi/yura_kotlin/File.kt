@@ -1,26 +1,33 @@
 package com.lizdepskyi.yura_kotlin
 
 fun main() {
-    var greeting = "Hello"
 
-    greeting = "Hi!"
-    var number: Int = 1
+    val isAdult: Boolean
+    val age = 19
+    val isMan = true
 
-    println("$greeting My favorite number is $number")
+    isAdult = if (age > 18) {
+        println("You're adult, man")
+        true
+    } else {
+        println("You are not adult")
+        false
+    }
 
-    val name = "Liubomyr"
-    var age = 30
+    if (isAdult && isMan) {
+        println("You can go to the party")
+    } else if (isAdult && !isMan) {
+        println("You can go to the party")
+    } else {
+        println("You cannot go to the party")
+    }
 
-    age += 4
-    age -= 4
-    age /= 4
-    age *= 4
-    age++
+    var isStudent = true
+    var hasTicket = false
 
-    var radius = 7
-    val pi = 3.14
-    var circleArea = pi * radius * radius
-    println(circleArea)
-
-    println("My name is $name and I'm $age years old")
+    if (!isStudent || hasTicket) {
+        println("You can go to the party")
+    } else {
+        println("You can't go to the party")
+    }
 }
